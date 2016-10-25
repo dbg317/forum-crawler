@@ -17,9 +17,9 @@ sec_quest_element = driver.find_element_by_name('questionid')
 sec_quest_element_select = Select(sec_quest_element)  # drop down menu element
 sec_ans_element = driver.find_element_by_name('answer')
 login_element.clear()
-login_element.send_keys('dbg3177')
+login_element.send_keys('')
 passW_element.clear()
-passW_element.send_keys('Aa000000-')
+passW_element.send_keys('')
 sec_quest_element_select.select_by_value('5')  # selecting drop down menu options
 sec_ans_element.send_keys('sah')
 login_button_element.click()

@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 # Initialization
 start_time = time.time()
 driver = webdriver.Chrome()
-driver.get('http://www.18p2p.com/forum/forumdisplay.php?fid=219')
+driver.get('')
 driver.maximize_window()
 login_element = driver.find_element_by_name('username')
 passW_element = driver.find_element_by_name('password')
@@ -34,12 +34,12 @@ attachment_xpath_3 = '/html/body/center/p[1]/table[2]/tbody/tr[4]/td[2]/table/tb
 attachment_xpath_4 = '/html/body/center/p[1]/table[2]/tbody/tr[4]/td[2]/table/tbody/tr[2]/td/p[3]/a[2]'
 attachment_xpath_list = [attachment_xpath_1, attachment_xpath_2, attachment_xpath_3, attachment_xpath_4]
 page_number = 1
-filter_list = ['vipArea', 'sexyhub', 'muse', 'digitalplayground', 'vintageFlash', 'wicked', 'photodromm', 'naughtyAmerica', 'brazzers', '刪除', 'mc-nudes', 'hollyRandall', 'penthouse']
+filter_list = []
 end_date = '2016-10-22'
 
 
 def main():
-    url_link = 'http://www.18p2p.com/forum/forumdisplay.php?fid=219&page='
+    url_link = ''
 
     for i in range(1, 10):  # loop to which page
         print('page', i)
